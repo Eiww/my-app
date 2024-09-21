@@ -21,8 +21,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 .caps {
-  font-size: 128px;
-  font-family: "Roboto Condensed";
+  font-size: 200px;
+  font-family: "Raleway";
 }
 @layer utilities {
   .text-balance {
