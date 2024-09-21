@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --darkblue: #00b2a0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +20,10 @@ body {
   background: var(--background);
   font-family: "Roboto Condensed", sans-serif;
 }
-
+.caps {
+  font-size: 128px;
+  font-family: "Roboto Condensed";
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

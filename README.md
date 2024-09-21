@@ -1,3 +1,11 @@
+          {/* <Image
+            src="/img/logo.svg"
+            alt="Логотип"
+            width={60}
+            height={60}
+            className="w-10 h-10"
+          /> */}
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
