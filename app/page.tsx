@@ -1,13 +1,22 @@
 import Image from "next/image";
 
+/* Simple React Snippets
+Tailwind CSS Intellisense
+Auto Import
+Path Intellisense
+
+*/
 export default function Home() {
   return (
     <div className="grid grid-rows-[40px_1fr_40px] items-center justify-items-center min-h-screen p-10 pb-10 gap-4 ">
-      <div
-        className="bg-cover bg-center"
-        style={{ backgroundImage: `url('/img/background.png')` }}
-      ></div>
-      <header className="row-start-1 flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6 sm:text-left">
+      {/* {/* <div className="bg-mainbackground bg-cover bg-center"></div> */}
+      <Image
+        src="/img/background.png"
+        fill={true}
+        alt={""}
+        className="pointer-events-none user-select-none"
+      />
+      <header className="row-start-1 flex-col items-center gap-4 sm:flex-row sm:flex sm:items-start sm:gap-6 hidden relative">
         <nav className="flex flex-wrap gap-4 sm:gap-6">
           <a href="#" className="relative group text-white">
             О нас
@@ -36,8 +45,10 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex flex-col gap-4 row-start-2 items-center justify-center">
-        <p className="caps font-bold">WAVE</p>
-        <p className="text-lg sm:text-xl">
+        className="pointer-events-none user-select-none
+        -webkit-touch-callout-none"
+        <p className="caps font-bold relative text-black">WAVE</p>
+        <p className="text-lg sm:text-xl relative text-black p-0">
           Школа серфинга на канарских Островах
         </p>
       </main>

@@ -7,11 +7,34 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "480px",
+      sm: "576px",
+      md: "923px",
+      lg: "1070px",
+      xl: "1440px",
+      "2xl": "1536px",
+    },
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        xs: "100%",
+        sm: "100%",
+        md: "100%",
+        lg: "100%",
+        xl: "1150px",
+        "2xl": "1150px",
+      },
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         darkblue: "var(--darkblue)",
+      },
+      backgroundImage: {
+        mainbackground: "url('/img/background.png')",
       },
     },
   },
