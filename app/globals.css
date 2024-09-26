@@ -21,7 +21,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 .caps {
-  font-size: 200px;
+  font-size: calc(20px + 12vw);
   font-family: "Raleway";
 }
 @layer utilities {
