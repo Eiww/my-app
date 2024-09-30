@@ -8,9 +8,9 @@
   --darkblue: #00b2a0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
+    --background: #ededed;
     --foreground: #ededed;
   }
 }
@@ -20,10 +20,15 @@ body {
   background: var(--background);
   font-family: "Roboto Condensed", sans-serif;
 }
+.caps_mobile {
+  font-size: calc(20px + 19vw);
+  font-family: "Raleway";
+}
 .caps {
   font-size: calc(20px + 12vw);
   font-family: "Raleway";
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

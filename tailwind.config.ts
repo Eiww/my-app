@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      xs: "480px",
+      xs: "320px",
       sm: "576px",
       md: "923px",
       lg: "1070px",
@@ -32,9 +32,6 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         darkblue: "var(--darkblue)",
-      },
-      backgroundImage: {
-        mainbackground: "url('/img/background.png')",
       },
     },
   },
