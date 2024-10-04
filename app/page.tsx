@@ -51,7 +51,7 @@ export default function Home() {
           </nav>
         </header>
         <main className="row-start-2 pointer-events-none user-select-none">
-          <p className="caps sm:caps_mobile font-bold relative text-black user-select-none select-none ">
+          <p className="caps font-bold relative text-black user-select-none select-none ">
             WAVE
           </p>
           <p className="relative text-black user-select-none select-none pb-32 text-left sm:text-center">
@@ -169,6 +169,30 @@ export default function Home() {
             </p>
           </li>
         </ul>
+        <div className="gap-8">
+          <div>
+            <div>
+              <p>приехали</p>
+              <img src="/img/wave85.svg" alt="" />
+              <p>85 раз</p>
+            </div>
+            <div>
+              <p>приехали</p>
+              <img src="/img/wave95.svg" alt="" />
+              <p>95 раз</p>
+            </div>
+            <div>
+              <p>приехали</p>
+              <img src="/img/wave99.svg" alt="" />
+              <p>99 раз</p>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <p>приехали</p>
+            <p>приехали</p>
+          </div>
+        </div>
       </div>
     </div>
   );

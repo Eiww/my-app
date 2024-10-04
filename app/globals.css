@@ -23,11 +23,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 .caps_mobile {
-  font-size: calc(20px + 19vw);
+  font-size: calc(20px + 20vw);
   font-family: "Raleway";
 }
 .caps {
-  font-size: calc(20px + 12vw);
+  font-size: calc(20px + 12svw);
   font-family: "Raleway";
 }
 
