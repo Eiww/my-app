@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import Swiper from "./components/Swiper";
 
 /* Simple React Snippets
 Tailwind CSS Intellisense
@@ -69,72 +68,9 @@ export default function Home() {
             /
           </p>
         </div>
+        <Swiper />
       </div>
-      {/* <div className="grid grid-cols-6 gap-12 md:grid-cols-2 p-80">
-          <p className=" text-black">
-            Канарские острова не случайно называют европейскими Гавайями – это
-            идеальное место для поклонников серфинга: стабильный теплый ветер
-            круглый год, песчаные пляжи, километры нетронутых просторов и
-            прозрачное море. А настоящей Меккой для серфингистов становится
-            Фуэртевентура – второй по величине остров архипелага.
-          </p>
-          <p className=" text-black">
-            Пока что вы только хотите понять, что такое серфинг, или уже
-            испытали всю прелесть катания на волнах, но желаете поднять свой
-            уровень? Наша школа серфинга сможет предложить обучение для любого
-            уровня подготовки.
-          </p>
-          <p className=" text-black">
-            Именно здесь лучшее в Испании место, в котором можно пройти обучение
-            серфингу. Кроме того, что зимой и осенью сюда приходят огромные
-            атлантические волны, Фуэртевентура может похвастать и множеством
-            мелководных спокойных лагун, отлично подходящих для обучения
-            начинающих серфингистов.
-          </p>
-          <p className=" text-black">
-            Четыре часа увлекательных занятий в день помогут вам уверенно
-            покорять волны, почувствовать себя настоящим серфингистом.
-          </p>
-          <p className=" text-black">
-            Серфинг на Канарских островах доступен круглый год – и волны, и
-            подходящая погода здесь есть всегда. Причем волну, подходящую по
-            уровню, сможет найти и настоящий профи, и новичок. Не случайно
-            считается, что именно это место лучше всего подойдет для обучения
-            здесь возможно без сложностей переходить на новый уровень.
-          </p>
-          <p className=" text-black">
-            Основные достоинства нашей русской школы – высокое качество
-            преподавания и организации занятий, безопасность (все наши клиенты
-            застрахованы в компании Allianz), отличный инвентарь и экипировка
-            (предоставляется на весь курс обучения), в том числе мягкие
-            безопасные доски для начинающих.
-          </p>
-          <p className=" text-black">
-            Перечисляя достоинства, нельзя обойти и то, что пляжи Фуэртевентуры
-            самые протяженные на Канарах. В итоге невозможно представить их
-            переполненных туристами. Вы столкнетесь только с теми, кого,как и
-            вас, будет интересовать одна цель – обучение серфингу.
-          </p>
-          <p className=" text-black">
-            Сначала мы определяем уровень катания и физической подготовки и
-            только потом составляем программу подготовки. И можем заверить, что
-            после того, как закончится обучение, вы не только получите массу
-            великолепных ощущений, но и это уровень поднимется на новую ступень.
-          </p>
-        </div> */}
-      {/* <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
-      </Swiper> */}
-      <div className="grid content-between items-center justify-items-center min-h-screen p-10 pb-10 gap-10 md:gap-28 bg-bggray">
+      <div className="md:grid md:content-between md:items-center md:justify-items-center md:min-h-screen md:p-10 md:pb-10 gap-10 md:gap-28 bg-bggray">
         <div className="flex items-end">
           <p className=" text-black user-select-none select-none sm:text-justify text-3xl text-left">
             В ШКОЛЕ ВЫ ПОЛУЧИТЕ
@@ -173,18 +109,18 @@ export default function Home() {
             </p>
           </li>
         </ul> */}
-        <div className="flex md:grid md:grid-cols-3">
+        <div className="flex flex-col md:grid md:grid-cols-3">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <p>ПРОЖИВАНИЕ</p>
             <img src="/img/icon_3s1.svg" alt="" />
           </div>
 
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
             <p>ПЕРЕЛЕТ И СТРАХОВКУ</p>
             <img src="/img/icon_3s2.svg" alt="" />
           </div>
 
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
             <p>ОБУЧЕНИЕ И ЭКИПИРОВКУ</p>
             <img src="/img/icon_3s3.svg" alt="" />
           </div>
