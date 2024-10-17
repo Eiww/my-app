@@ -8,15 +8,24 @@ import "swiper/css";
 const CustomSwiper = () => {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={40}
+      slidesPerView={1} // По умолчанию 1 слайд
+      grid={{
+        rows: 4, // Количество строк для планшетов
+      }}
       breakpoints={{
+        // Для маленьких планшетов
+        640: {
+          slidesPerView: 2,
+        },
+        // Для десктопов
         768: {
           slidesPerView: 4,
         },
       }}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
+      className="w-10/12 mx-auto select-none" // Центрирование слайда
     >
       <SwiperSlide>
         Канарские острова не случайно называют европейскими Гавайями – это

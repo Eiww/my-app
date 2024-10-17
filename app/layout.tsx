@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="outline-dashed outline-2 outline-offset-2">
       <body
         className={`${RobotoCondensed.variable} ${RobotoCondensed.variable} antialiased`}
       >

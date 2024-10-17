@@ -59,7 +59,7 @@ export default function Home() {
           <footer className="row-start-3 flex gap-4 flex-wrap items-center justify-center"></footer>
         </main>
       </div>
-      <div className="grid items-center content-between justify-items-center min-h-screen p-10 pb-10 gap-4 ">
+      <div className="grid items-center justify-items-center p-10 pb-10 gap-9 ">
         <div className="flex items-end">
           <p className=" text-black user-select-none select-none sm:text-justify text-3xl text-left">
             О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ
@@ -79,36 +79,6 @@ export default function Home() {
             /
           </p>
         </div>
-        {/* <ul className="list-none flex flex-col gap-24 md:flex md:flex-row md:items-center ">
-          <li className="flex items-center flex-col md:flex-row-reverse gap-5">
-            ПРОЖИВАНИЕ
-            <img src="/img/icon_3s1.svg" alt="" />
-            <p className="text-xs">
-              Наша школа серфинга находится в 100 м от океанского побережья. К
-              услугам гостей открытый бассейн и бесплатный Wi-Fi. Из верхней
-              террасы открывается вид на океан. Расстояние до центра города 15
-              мин.
-            </p>
-          </li>
-          <li className="flex items-center flex-col md:flex-row-reverse gap-5">
-            ПЕРЕЛЕТ И СТРАХОВКУ
-            <img src="/img/icon_3s2.svg" alt="" />
-            <p className="text-xs">
-              Все участники программы застрахованы страховой компанией Allianz.
-              Перелет из Тенерифе до острова Лансароте и обратно входит в
-              стоимость программы
-            </p>
-          </li>
-          <li className="flex items-center flex-col md:flex-row-reverse gap-5">
-            ОБУЧЕНИЕ И ЭКИПИРОВКУ
-            <img src="/img/icon_3s3.svg" alt="" />
-            <p className="text-xs">
-              Все оборудование и экипировка известных производителей и
-              предоставляется на весь курс программы. Тренировочный процесс
-              начинается с определения вашего уровня катания
-            </p>
-          </li>
-        </ul> */}
         <div className="flex flex-col md:grid md:grid-cols-3">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <p>ПРОЖИВАНИЕ</p>
