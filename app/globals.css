@@ -31,6 +31,10 @@ body {
   font-family: "Raleway";
 }
 
+.h-caps {
+  font-family: "Raleway";
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

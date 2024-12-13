@@ -1,9 +1,11 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
 
 const CustomSwiper = () => {
   return (
@@ -11,7 +13,7 @@ const CustomSwiper = () => {
       spaceBetween={40}
       slidesPerView={1} // По умолчанию 1 слайд
       grid={{
-        rows: 4, // Количество строк для планшетов
+        rows: 3, // Количество строк для планшетов
       }}
       breakpoints={{
         // Для маленьких планшетов
@@ -20,12 +22,20 @@ const CustomSwiper = () => {
         },
         // Для десктопов
         768: {
+          slidesPerView: 3,
+        },
+        1024: {
           slidesPerView: 4,
         },
       }}
+      modules={[Pagination]} // Добавляем модуль Pagination
+      pagination={{
+        clickable: true, // Делаем точки пагинации кликабельными
+        el: ".swiper-pagination",
+      }}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      className="w-10/12 mx-auto select-none" // Центрирование слайда
+      className="w-3/4 mx-auto select-none" // Центрирование слайда
     >
       <SwiperSlide>
         Канарские острова не случайно называют европейскими Гавайями – это
@@ -75,6 +85,7 @@ const CustomSwiper = () => {
         как закончится обучение, вы не только получите массу великолепных
         ощущений, но и это уровень поднимется на новую ступень.
       </SwiperSlide>
+      <div className="swiper-pagination absolute, !bottom-4"></div>
     </Swiper>
   );
 };
