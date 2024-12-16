@@ -85,7 +85,7 @@ const CustomSwiper = () => {
         как закончится обучение, вы не только получите массу великолепных
         ощущений, но и это уровень поднимется на новую ступень.
       </SwiperSlide>
-      <div className="swiper-pagination absolute, !bottom-4"></div>
+      <div className="swiper-pagination absolute bottom-0"></div>
     </Swiper>
   );
 };
